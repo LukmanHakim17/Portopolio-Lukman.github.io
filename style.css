@@ -1,0 +1,46 @@
+.jumbotron {
+    padding-top: 5rem;
+    background-image: linear-gradient(to left, #0F0C29 25%, #302B63);
+    }
+    #img{
+        width: 70%;
+    }
+    
+    
+    #home::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome browsers */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none;  /* mozilla */
+    }
+    
+    #aboutme{
+        background-color: #302B63;
+    }
+    
+    #myskills {
+        background-color: #0F0C29;
+    }
+    
+    section {
+        padding-top: 5rem;
+        
+    }
+    
+    #img-box{
+        position: relative;
+        transform-style: preserve-3d;
+    }
+    
+    #img-box::before{
+        content: url(img/3dflutter.png);
+        position: absolute;
+        left: 10%;
+        transform: translate3d(0,0,80px);
+    }
+    #img-box::after{
+        content: url(img/3dandroid.png);
+        position: absolute;
+        top: 210px;
+        right: 10%;
+        transform: translate3d(0,0,80px);
+    }
